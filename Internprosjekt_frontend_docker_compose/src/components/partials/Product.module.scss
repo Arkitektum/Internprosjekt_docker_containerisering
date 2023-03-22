@@ -1,4 +1,7 @@
 .product {
+    &:first-of-type {
+        margin-top: 10px;
+    }
     background-color: burlywood;
     &.smartphones {
         background-color: #f891ae;
@@ -10,6 +13,7 @@
     img {
         width: 100px;
         vertical-align: middle;
+        display: inline-block;
     }
     .productInfo {
         display: inline-block;

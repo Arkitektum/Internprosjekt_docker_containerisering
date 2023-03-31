@@ -12,10 +12,6 @@ import jakarta.transaction.Transactional;
 @Transactional
 public class RegistrationService {
 
-    @Autowired
-    public RegistrationService() {
-    }
-
     public String getRegistration(Long id){
        
         return "";

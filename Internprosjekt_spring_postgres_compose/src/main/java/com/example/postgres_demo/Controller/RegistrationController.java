@@ -17,11 +17,11 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 @Controller
 @RequestMapping(path = "/baerekraft")
 @ResponseBody
-public class RestController {
+public class RegistrationController {
     
 
     @Autowired
-    public RestController(RegistrationService restService) {
+    public RegistrationController(RegistrationService restService) {
     }
     @RequestMapping(value = "getRegistration", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
     public ResponseEntity<String> onGetRequest(@RequestParam(value = "id") String id){

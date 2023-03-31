@@ -10,10 +10,10 @@ import jakarta.transaction.Transactional;
 
 @Service
 @Transactional
-public class RestService {
+public class RegistrationService {
 
     @Autowired
-    public RestService() {
+    public RegistrationService() {
     }
 
     public String getRegistration(Long id){

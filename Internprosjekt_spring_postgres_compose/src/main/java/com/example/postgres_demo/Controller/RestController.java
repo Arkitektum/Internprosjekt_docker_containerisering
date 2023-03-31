@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.postgres_demo.Service.RestService;
+import com.example.postgres_demo.Service.RegistrationService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
@@ -21,7 +21,7 @@ public class RestController {
     
 
     @Autowired
-    public RestController(RestService restService) {
+    public RestController(RegistrationService restService) {
     }
     @RequestMapping(value = "getRegistration", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
     public ResponseEntity<String> onGetRequest(@RequestParam(value = "id") String id){

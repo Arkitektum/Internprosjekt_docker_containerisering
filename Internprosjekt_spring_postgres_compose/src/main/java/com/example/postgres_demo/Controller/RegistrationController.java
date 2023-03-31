@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.example.postgres_demo.Entity.RegistrationEntity;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
@@ -22,16 +23,14 @@ public class RegistrationController {
 
     }
     @RequestMapping(value = "getRegistration", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
-    public ResponseEntity<String> onGetRequest(){
+    public ResponseEntity<RegistrationEntity> onGetRequest(){
         
-        return ResponseEntity.ok("");
+        return ResponseEntity.ok(null);
     }
 
     @RequestMapping(value = "postRegistration", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.POST)
-    public ResponseEntity<String> onPostRequest() throws JsonMappingException, JsonProcessingException{
+    public ResponseEntity<RegistrationEntity> onPostRequest() throws JsonMappingException, JsonProcessingException{
 
-        
-
-        return ResponseEntity.ok("");
+        return ResponseEntity.ok(null);
     }
 }

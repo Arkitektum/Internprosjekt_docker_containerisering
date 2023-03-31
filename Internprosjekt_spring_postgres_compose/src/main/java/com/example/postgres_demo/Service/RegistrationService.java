@@ -2,6 +2,7 @@ package com.example.postgres_demo.Service;
 
 import org.springframework.stereotype.Service;
 
+import com.example.postgres_demo.Entity.RegistrationEntity;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
@@ -11,14 +12,14 @@ import jakarta.transaction.Transactional;
 @Transactional
 public class RegistrationService {
 
-    public String getRegistration(Long id){
+    public RegistrationEntity getRegistration(String id){
        
-        return "";
+        return null;
     }
 
-    public String saveRegistration(String registrationAsJson) throws JsonMappingException, JsonProcessingException{
+    public RegistrationEntity saveRegistration(RegistrationEntity registrationEntity) throws JsonMappingException, JsonProcessingException{
         
        
-        return "";
+        return null;
     }
 }
